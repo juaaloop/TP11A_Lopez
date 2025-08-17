@@ -1,5 +1,4 @@
 * {
-  border: solid black 1px;
   margin: 0%;
   padding: 0%;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -9,7 +8,7 @@
   width: 100%;
   display: grid;
   grid:
-    "header" 4% "main" 1fr "footer" 15%;
+    "header" 4% "main" 1fr "footer" 10%;
   background-color: #a06a18;
 }
 
@@ -41,7 +40,8 @@
 
 }
 
-.header nav a {
+.header nav a,
+.footer div a {
   text-decoration: none;
   color: white;
   font-size: 18px;
@@ -55,6 +55,20 @@
 .footer {
   grid-area: footer;
   background-color: #A06A18;
+}
+
+.footer img {
+  margin: 1%;
+  width: 7.5%;
+}
+
+.footer div {
+  margin-top: 2%;
+  margin-right: 7%;
+  float: right;
+  width: 15%;
+  display: grid;
+  justify-content: center;
 }
 
 .layout2 {
@@ -132,6 +146,9 @@
   border-radius: 8px;
   position: relative;
   z-index: 0;
+  border-bottom: 1px solid gray;
+  box-shadow: 6px 7px 8px 3px #4242425d;
+
 }
 
 .layout4 div img {
@@ -151,7 +168,6 @@
   border-radius: 60% 60% 0 0;
   background-color: #fff4e098;
   opacity: 0;
-
 }
 
 h1 {
@@ -169,15 +185,22 @@ h1 {
   display: block;
   color: white;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: background-color 0.25s ease;
 }
 
-.header a:hover {
+.header a:hover, .footer a:hover {
   color: #ffe08b;
   transition: all 0.4s ease;
 }
 
 .layout4 div:hover h3 {
-opacity: 1;  transition: all 0.5s ease;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+.layout4 div:hover {
+  scale: 1.075;
+  transition: all 0.5s ease;
+    box-shadow: 6px 10px 8px 8px #42424277;
 
 }
