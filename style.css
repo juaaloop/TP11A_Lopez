@@ -201,10 +201,19 @@ h1 {
 }
 
 @media (width <= 600px) {
+  .layout {
+    width: 100%;
+    display: grid;
+    grid: "header" 2% "main" 1fr "footer" 10%;
+    background-color: #a06a18;
+  }
   .header nav a {
     display: none;
   }
-
+  .header img {
+    width: 15%;
+    margin-top:-2%;
+  }
   .layout2 {
     width: 100%;
     display: grid;
@@ -233,28 +242,27 @@ h1 {
     margin-bottom: 5%;
     width: 100%;
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: justify;
     color: #201511;
   }
-  
+
   .layout3 div {
     width: 40%;
   }
-  .layout3{
+  .layout3 {
     font-size: 14px;
     text-align: center;
   }
   .layout4 {
     width: 100%;
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 45%);
-    gap: 5% 0%;
+    grid-template-columns: repeat(1, 90%);
+    gap: 2.5% 0%;
     justify-content: center;
   }
-  
+
   .layout4 div {
     padding: 2%;
     background-color: #fff4e0;
