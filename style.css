@@ -286,4 +286,8 @@ h1 {
     margin-bottom: 100%;
   }
 
+  .footer img {
+    margin: 1%;
+    width: 15%;
+  }
 }
